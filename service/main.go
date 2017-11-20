@@ -89,7 +89,7 @@ func handlerPost(w http.ResponseWriter, r *http.Request) {
 	}
 	id := uuid.New()
 	// Save to ES.
-	// saveToES(&p, id)
+	saveToES(&p, id)
 
 	ctx := context.Background()
 	// you must update project name here
